@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install step"
+
+  build:
+    commands:
+      - echo "Zipping index.html"
+      - zip -r output.zip index.html
+
+artifacts:
+  files:
+    - output.zip
+  discard-paths: yes

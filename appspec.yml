@@ -7,6 +7,7 @@ files:
     destination: /var/www/html
   - source: script.js
     destination: /var/www/html
+
 hooks:
   AfterInstall:
     - location: scripts/deploy.sh

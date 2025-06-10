@@ -1,16 +1,10 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo "Install step"
-
   build:
     commands:
-      - echo "Zipping index.html"
-      - zip -r output.zip index.html
-
+      - echo "Zipping index.html, style.css, and script.js"
+      - zip -r output.zip index.html style.css script.js
 artifacts:
   files:
     - output.zip
-  discard-paths: yes

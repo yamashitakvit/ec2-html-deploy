@@ -11,7 +11,7 @@ files:
     destination: /home/ubuntu/scripts
 
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: scripts/deploy.sh
       timeout: 300
       runas: ubuntu
